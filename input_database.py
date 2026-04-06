@@ -56,11 +56,11 @@ for index, row in data_read_file.iterrows():
 
 connection.commit()
 
-cursor.execute("SELECT * FROM sensors_data_given LIMIT 5")
+#proverka
+'''cursor.execute("SELECT * FROM sensors_data_given LIMIT 5")
 rows = cursor.fetchall()
-print("\n📋 Первые 5 записей в таблице:")
 for row in rows:
-    print(row)
+    print(row)'''
 
 cursor.close()
 connection.close()
